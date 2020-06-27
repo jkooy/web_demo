@@ -1,3 +1,4 @@
+# coding=UTF-8
 import re
 import pickle
 from sklearn.feature_extraction.text import HashingVectorizer
