@@ -6,9 +6,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <style>
-
+#count{
+    word-wrap: break-word;
+    word-break: normal;
+    color:rgb(53,73,94);
+    }
 </style>
 <body>
+    <h3 align = "center"><font face = "Arial" color = "red" size="6">Demo of table to text generation</font ></h3>
+    <hr/>
     {% from "_formhelpers.html" import render_field %}
     <div class="content_div">
         <div>Please enter the table?</div>
@@ -23,6 +29,15 @@
             </dl>
             <input type="submit" value="commit review" name="submit_btn">
         </form>
+    </div>
+    
+    <hr/>
+    <div class="example input" >
+        <div>Example input:</div>
+        <div id = "count">
+        <font size="2">         name_1:lenny\tname_2:randle\tposition_1:second\tposition_2:baseman\tposition_3:/\tposition_4:third\tposition_5:baseman\timage:<none>\tbats_1:switch\tthrows_1:right\tbirth_date_1:12\tbirth_date_2:february\tbirth_date_3:1949\tbirth_place_1:long\tbirth_place_2:beach\tbirth_place_3:,\tbirth_place_4:california\tdeath_date:<none>\tdeath_place:<none>\tdebutdate_1:june\tdebutdate_2:16\tdebutyear_1:1971\tdebutteam_1:washington\tdebutteam_2:senators\tfinaldate_1:june\tfinaldate_2:20\tfinalyear_1:1982\tfinalteam_1:seattle\tfinalteam_2:mariners\tstatlabel_1:batting\tstatlabel_2:average\tstatlabel_3:home\tstatlabel_4:runs\tstatlabel_5:runs\tstatlabel_6:batted\tstatlabel_7:in\tstatvalue_1:.257\tstatvalue_2:27\tstatvalue_3:322\tteams:<none>\tarticle_title_1:lenny\tarticle_title_2:randle
+        </font>
+        </div>     
     </div>
 </body>
 </html>

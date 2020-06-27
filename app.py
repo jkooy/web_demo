@@ -95,4 +95,4 @@ class ReviewForm(Form):
 
 if __name__ == "__main__":
     #启动服务
-    app.run()
+    app.run(host='0.0.0.0')
